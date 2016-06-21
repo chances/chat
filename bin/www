@@ -30,10 +30,10 @@ var io = require('socket.io')(server);
  * Add a connection listener to the socket
  */
 io.on('connection', function(client) {
-  debug.log('Client connected...');
+  console.log('Client connected...');
 
   client.on('join', function(data) {
-    debug.log(data);
+    console.log(data);
   });
 });
 
